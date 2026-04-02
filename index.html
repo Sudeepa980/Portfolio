@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K. Sudeepa | Personal Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    header {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">K. Sudeepa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<header id="home" class="text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">K. Sudeepa</h1>
+    <p class="lead">BTech CSE Student | Web Developer | Learner</p>
+    <a href="#projects" class="btn btn-light btn-lg mt-3">View Projects</a>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-primary mb-4">About Me</h2>
+    <p class="text-center">
+      Hello! I am <strong>K. Sudeepa</strong>, a BTech Computer Science student passionate about 
+      web development, programming, and problem solving.
+    </p>
+
+    <h3 class="text-primary mt-5 mb-3">Qualifications</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>CGPA / %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech (CSE)</td>
+            <td>XYZ College</td>
+            <td>2024 - Present</td>
+            <td>8.7 CGPA</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>ABC College</td>
+            <td>2022 - 2024</td>
+            <td>92%</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>DEF School</td>
+            <td>2010 - 2022</td>
+            <td>95%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center text-primary mb-5">My Skills</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5>💻 Programming</h5>
+            <span class="badge bg-primary m-1">C</span>
+            <span class="badge bg-primary m-1">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5>🌐 Web Development</h5>
+            <span class="badge bg-success m-1">HTML</span>
+            <span class="badge bg-success m-1">CSS</span>
+            <span class="badge bg-success m-1">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-primary mb-5">My Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5>Mini FinTech Banking System</h5>
+            <p>C-based banking system.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5>Object Detection System</h5>
+            <p>Python project using AI.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-primary mb-4">Contact Me</h2>
+
+    <p>Email: 
+      <a href="mailto:sudeepakongoti@gmail.com">sudeepakongoti@gmail.com</a>
+    </p>
+
+    <form id="contactForm" class="mx-auto" style="max-width:400px;">
+      <input type="text" class="form-control mb-3" placeholder="Name" required>
+      <input type="email" class="form-control mb-3" placeholder="Email" required>
+      <textarea class="form-control mb-3" rows="3" placeholder="Message" required></textarea>
+      <button class="btn btn-primary w-100">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-3">
+      <h5>Message Sent!</h5>
+      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-3">
+  © 2026 K. Sudeepa
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    new bootstrap.Modal(document.getElementById('successModal')).show();
+    form.reset();
+  });
+</script>
+
+</body>
+  </html>
