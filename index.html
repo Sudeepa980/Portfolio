@@ -1,209 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K. Sudeepa | Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudeepa Kongoti | Portfolio</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom Styling -->
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-    .card:hover {
-      transform: scale(1.03);
-      transition: 0.3s;
-    }
-    header {
-      background: linear-gradient(to right, #0d6efd, #6610f2);
-    }
-  </style>
+<style>
+body { font-family: 'Poppins', sans-serif; background:#f8fafc; color:#1e293b; }
+.sidebar { position:fixed; width:260px; height:100%; background:linear-gradient(180deg,#2563eb,#1e40af); padding:30px 20px; }
+.sidebar h2 { color:#fff; }
+.sidebar a { display:block; color:#e0f2fe; margin:15px 0; text-decoration:none; font-weight:500; }
+.sidebar a:hover { color:#fff; }
+.content { margin-left:280px; padding:40px; }
+.section { margin-bottom:60px; }
+.card { background:#fff; border:none; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 8px 20px rgba(0,0,0,0.08); }
+.skill-bar { height:8px; background:#e2e8f0; border-radius:5px; }
+.skill-fill { height:8px; background:#2563eb; border-radius:5px; }
+.badge-soft{background:#eef2ff;color:#3730a3;padding:6px 10px;border-radius:20px;margin:4px;display:inline-block}
+</style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">K. Sudeepa</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Home -->
-<header id="home" class="text-white text-center py-5">
-  <div class="container">
-    <h1 class="display-4 fw-bold">K. Sudeepa</h1>
-    <p class="lead">BTech CSE Student | Web Developer | Learner</p>
-    <a href="#projects" class="btn btn-light btn-lg mt-3">View Projects</a>
-  </div>
-</header>
-
-<!-- About -->
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center text-primary mb-4">About Me</h2>
-    <p class="text-center">
-      Hello! I am <strong>K. Sudeepa</strong>, a BTech Information technology student passionate about 
-      web development, programming, and problem solving.
-    </p>
-
-    <h3 class="text-primary mt-5 mb-3">Qualifications</h3>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped text-center">
-        <thead class="table-primary">
-          <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Year</th>
-            <th>CGPA / %</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>B.Tech (IT)</td>
-            <td>Vasavi College of Engineering</td>
-            <td>2024 - Present</td>
-            <td>8.38 CGPA</td>
-          </tr>
-          <tr>
-            <td>12th</td>
-            <td>Sri Chaitanya Junior College</td>
-            <td>2024</td>
-            <td>97.2%</td>
-          </tr>
-          <tr>
-            <td>10th</td>
-            <td>Sri Chaitanya techno curriculam</td>
-            <td> 2022</td>
-            <td>95%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="text-center text-primary mb-5">My Skills</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
-            <h5>💻 Programming</h5>
-            <span class="badge bg-primary m-1">C</span>
-            <span class="badge bg-primary m-1">Python</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
-            <h5>🌐 Web Development</h5>
-            <span class="badge bg-success m-1">HTML</span>
-            <span class="badge bg-success m-1">CSS</span>
-            <span class="badge bg-success m-1">Bootstrap</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center text-primary mb-5">My Projects</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
-            <h5>Mini FinTech </h5>
-            <p>C-based banking system.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
-            <h5>Multi Crop Detection System</h5>
-            <p>Python project using AI.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="py-5">
-  <div class="container text-center">
-    <h2 class="text-primary mb-4">Contact Me</h2>
-
-    <p>Email: 
-      <a href="mailto:sudeepakongoti@gmail.com">sudeepakongoti@gmail.com</a>
-    </p>
-
-    <form id="contactForm" class="mx-auto" style="max-width:400px;">
-      <input type="text" class="form-control mb-3" placeholder="Name" required>
-      <input type="email" class="form-control mb-3" placeholder="Email" required>
-      <textarea class="form-control mb-3" rows="3" placeholder="Message" required></textarea>
-      <button class="btn btn-primary w-100">Send</button>
-    </form>
-  </div>
-</section>
-
-<!-- Modal -->
-<div class="modal fade" id="successModal">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content text-center p-3">
-      <h5>Message Sent!</h5>
-      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-    </div>
-  </div>
+<div class="sidebar">
+  <h2>Sudeepa</h2>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#languages">Languages</a>
+  <a href="#strengths">Strengths</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- Footer -->
-<footer class="bg-primary text-white text-center py-3">
-  © 2026 K. Sudeepa
-</footer>
+<div class="content">
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>Motivated second-year B.Tech student in Information Technology with growing experience in Artificial Intelligence, Machine Learning, and Computer Vision. Skilled in dataset preprocessing, model evaluation, and research-oriented development. Passionate about building data-driven solutions and applying analytical thinking to real-world AI problems.</p>
+</section>
 
-<script>
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    new bootstrap.Modal(document.getElementById('successModal')).show();
-    form.reset();
-  });
-</script>
+<section id="education" class="section">
+<h2>Education</h2>
+<div class="card">
+<p><b>Vasavi College of Engineering</b> – B.Tech IT (Pursuing) | CGPA: 8.38</p>
+<p><b>Sri Chaitanya Junior College</b> – Intermediate | 97.2%</p>
+<p><b>Sri Chaitanya Techno Curriculum</b> – SSC | CGPA: 9.7</p>
+</div>
+</section>
+
+<section id="experience" class="section">
+<h2>Experience</h2>
+<div class="card">
+<p><b>Winter Research Intern – iHub-Data, IIIT Hyderabad (Oct–Dec 2025)</b></p>
+<ul>
+<li>Worked on Multi-Crop Disease Detection using Computer Vision</li>
+<li>Dataset preprocessing, annotation, and model evaluation</li>
+<li>Exposure to research workflows and AI experimentation</li>
+</ul>
+</div>
+
+<div class="card">
+<p><b>AI/ML Program Trainee – iHub-Data, IIIT Hyderabad (May–Sept 2025)</b></p>
+<ul>
+<li>Learned Machine Learning & Computer Vision fundamentals</li>
+<li>Worked on data preprocessing and evaluation techniques</li>
+<li>Understood real-world AI pipelines and applications</li>
+</ul>
+</div>
+</section>
+
+<section id="projects" class="section">
+<h2>Projects</h2>
+<div class="card">
+<p><b>CodeRefine – AI-Based Code Review System</b></p>
+<p>Analyzes and improves code quality focusing on readability and optimization.</p>
+</div>
+<div class="card">
+<p><b>Encrypted Chat System</b></p>
+<p>Secure messaging system implementing encryption concepts and data structures.</p>
+</div>
+<div class="card">
+<p><b>Smart Parking System</b></p>
+<p>Java-based application using OOP for parking management and slot allocation.</p>
+</div>
+</section>
+
+<section id="skills" class="section">
+<h2>Skills</h2>
+<p>Python</p><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+<p>Machine Learning</p><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+<p>Java</p><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+<p>C Programming</p><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+
+<div class="mt-3">
+<span class="badge-soft">NumPy</span>
+<span class="badge-soft">Pandas</span>
+<span class="badge-soft">Matplotlib</span>
+<span class="badge-soft">Data Structures</span>
+<span class="badge-soft">OOP</span>
+</div>
+</section>
+
+<section id="achievements" class="section">
+<h2>Achievements</h2>
+<div class="card">
+<ul>
+<li>Completed AI/ML & Computer Vision training at IIIT Hyderabad</li>
+<li>Hands-on exposure to research-based AI workflows</li>
+<li>Strong focus on real-world problem solving using AI</li>
+</ul>
+</div>
+</section>
+
+<section id="languages" class="section">
+<h2>Languages</h2>
+<div class="card">
+<p>Telugu (Fluent) | Hindi (Fluent) | English (Professional)</p>
+</div>
+</section>
+
+<section id="strengths" class="section">
+<h2>Strengths</h2>
+<div class="card">
+<p>Analytical Thinking | Problem Solving | Quick Learner | Research Mindset | Structured Work Approach</p>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p>Email: sudeepakongoti@gmail.com</p>
+<p>Phone: 9550862730</p>
+<p>GitHub: https://github.com/Sudeepa980</p>
+<p>LinkedIn: https://linkedin.com/in/sudeepa-kongoti-647b7333b</p>
+</section>
+
+</div>
 
 </body>
-  </html>
+</html>
+
