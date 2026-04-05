@@ -3,145 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sudeepa Kongoti | Portfolio</title>
+<title>Sudeepa Portfolio</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <style>
-body { font-family: 'Poppins', sans-serif; background:#f8fafc; color:#1e293b; }
-.sidebar { position:fixed; width:260px; height:100%; background:linear-gradient(180deg,#2563eb,#1e40af); padding:30px 20px; }
-.sidebar h2 { color:#fff; }
-.sidebar a { display:block; color:#e0f2fe; margin:15px 0; text-decoration:none; font-weight:500; }
-.sidebar a:hover { color:#fff; }
-.content { margin-left:280px; padding:40px; }
-.section { margin-bottom:60px; }
-.card { background:#fff; border:none; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 8px 20px rgba(0,0,0,0.08); }
-.skill-bar { height:8px; background:#e2e8f0; border-radius:5px; }
-.skill-fill { height:8px; background:#2563eb; border-radius:5px; }
-.badge-soft{background:#eef2ff;color:#3730a3;padding:6px 10px;border-radius:20px;margin:4px;display:inline-block}
+body { font-family: 'Poppins', sans-serif; background:#f9fafb; }
+.navbar { background:#4f46e5; }
+.navbar a { color:white !important; }
+.hero { padding:80px 20px; text-align:center; background:linear-gradient(135deg,#6366f1,#a5b4fc); color:white; }
+.section { padding:50px 15px; }
+.card { border:none; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-bottom:20px; }
+.progress { height:8px; }
 </style>
 </head>
 
 <body>
 
-<div class="sidebar">
-  <h2>Sudeepa</h2>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#achievements">Achievements</a>
-  <a href="#languages">Languages</a>
-  <a href="#strengths">Strengths</a>
-  <a href="#contact">Contact</a>
-</div>
-
-<div class="content">
-
-<section id="about" class="section">
-<h2>About Me</h2>
-<p>Motivated second-year B.Tech student in Information Technology with growing experience in Artificial Intelligence, Machine Learning, and Computer Vision. Skilled in dataset preprocessing, model evaluation, and research-oriented development. Passionate about building data-driven solutions and applying analytical thinking to real-world AI problems.</p>
-</section>
-
-<section id="education" class="section">
-<h2>Education</h2>
-<div class="card">
-<p><b>Vasavi College of Engineering</b> – B.Tech IT (Pursuing) | CGPA: 8.38</p>
-<p><b>Sri Chaitanya Junior College</b> – Intermediate | 97.2%</p>
-<p><b>Sri Chaitanya Techno Curriculum</b> – SSC | CGPA: 9.7</p>
-</div>
-</section>
-
-<section id="experience" class="section">
-<h2>Experience</h2>
-<div class="card">
-<p><b>Winter Research Intern – iHub-Data, IIIT Hyderabad (Oct–Dec 2025)</b></p>
-<ul>
-<li>Worked on Multi-Crop Disease Detection using Computer Vision</li>
-<li>Dataset preprocessing, annotation, and model evaluation</li>
-<li>Exposure to research workflows and AI experimentation</li>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+<a class="navbar-brand text-white" href="#">Sudeepa</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+<li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+<li class="nav-item"><a class="nav-link" href="#strengths">Strengths</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
 </div>
+</div>
+</nav>
 
-<div class="card">
-<p><b>AI/ML Program Trainee – iHub-Data, IIIT Hyderabad (May–Sept 2025)</b></p>
+<!-- Hero -->
+<div class="hero">
+<h2>Sudeepa Kongoti</h2>
+<p>AI/ML Enthusiast • IT Student</p>
+</div>
+
+<!-- About -->
+<div id="about" class="section container">
+<h4>About</h4>
+<p>Motivated second-year B.Tech student in Information Technology with experience in AI/ML and Computer Vision. Skilled in data preprocessing, model evaluation, and research-based development. Passionate about solving real-world problems using intelligent systems.</p>
+</div>
+
+<!-- Education -->
+<div id="education" class="section container">
+<h4>Education</h4>
+<div class="card p-3">
+<p><b>B.Tech IT</b> - Vasavi College (CGPA: 8.38)</p>
+<p><b>Intermediate</b> - Sri Chaitanya (97.2%)</p>
+<p><b>SSC</b> - Sri Chaitanya (CGPA: 9.7)</p>
+</div>
+</div>
+
+<!-- Experience -->
+<div id="experience" class="section container">
+<h4>Experience</h4>
+<div class="card p-3">
+<p><b>Winter Research Intern - IIIT Hyderabad</b></p>
 <ul>
-<li>Learned Machine Learning & Computer Vision fundamentals</li>
-<li>Worked on data preprocessing and evaluation techniques</li>
-<li>Understood real-world AI pipelines and applications</li>
+<li>Worked on multi-crop disease detection</li>
+<li>Handled dataset preprocessing and evaluation</li>
+<li>Gained exposure to research workflows</li>
 </ul>
 </div>
-</section>
-
-<section id="projects" class="section">
-<h2>Projects</h2>
-<div class="card">
-<p><b>CodeRefine – AI-Based Code Review System</b></p>
-<p>Analyzes and improves code quality focusing on readability and optimization.</p>
-</div>
-<div class="card">
-<p><b>Encrypted Chat System</b></p>
-<p>Secure messaging system implementing encryption concepts and data structures.</p>
-</div>
-<div class="card">
-<p><b>Smart Parking System</b></p>
-<p>Java-based application using OOP for parking management and slot allocation.</p>
-</div>
-</section>
-
-<section id="skills" class="section">
-<h2>Skills</h2>
-<p>Python</p><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-<p>Machine Learning</p><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-<p>Java</p><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-<p>C Programming</p><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-
-<div class="mt-3">
-<span class="badge-soft">NumPy</span>
-<span class="badge-soft">Pandas</span>
-<span class="badge-soft">Matplotlib</span>
-<span class="badge-soft">Data Structures</span>
-<span class="badge-soft">OOP</span>
-</div>
-</section>
-
-<section id="achievements" class="section">
-<h2>Achievements</h2>
-<div class="card">
+<div class="card p-3">
+<p><b>AI/ML Trainee - IIIT Hyderabad</b></p>
 <ul>
-<li>Completed AI/ML & Computer Vision training at IIIT Hyderabad</li>
-<li>Hands-on exposure to research-based AI workflows</li>
-<li>Strong focus on real-world problem solving using AI</li>
+<li>Learned ML and computer vision concepts</li>
+<li>Worked on real-world datasets</li>
+<li>Built understanding of AI pipelines</li>
 </ul>
 </div>
-</section>
-
-<section id="languages" class="section">
-<h2>Languages</h2>
-<div class="card">
-<p>Telugu (Fluent) | Hindi (Fluent) | English (Professional)</p>
 </div>
-</section>
 
-<section id="strengths" class="section">
-<h2>Strengths</h2>
-<div class="card">
-<p>Analytical Thinking | Problem Solving | Quick Learner | Research Mindset | Structured Work Approach</p>
+<!-- Projects -->
+<div id="projects" class="section container">
+<h4>Projects</h4>
+<div class="card p-3"><b>CodeRefine</b> - AI-based code improvement system</div>
+<div class="card p-3"><b>Encrypted Chat System</b> - Secure messaging</div>
+<div class="card p-3"><b>Smart Parking</b> - Java OOP project</div>
 </div>
-</section>
 
-<section id="contact" class="section">
-<h2>Contact</h2>
+<!-- Skills -->
+<div id="skills" class="section container">
+<h4>Skills</h4>
+<p>Python</p>
+<div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+<p>Machine Learning</p>
+<div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+<p>Java</p>
+<div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+<p>C Programming</p>
+<div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+</div>
+
+<!-- Achievements -->
+<div id="achievements" class="section container">
+<h4>Achievements</h4>
+<div class="card p-3">
+<ul>
+<li>Completed AI/ML training at IIIT Hyderabad</li>
+<li>Worked on real-world computer vision project</li>
+<li>Strong problem-solving mindset</li>
+</ul>
+</div>
+</div>
+
+<!-- Languages -->
+<div id="languages" class="section container">
+<h4>Languages</h4>
+<div class="card p-3">
+Telugu (Fluent), Hindi (Fluent), English (Professional)
+</div>
+</div>
+
+<!-- Strengths -->
+<div id="strengths" class="section container">
+<h4>Strengths</h4>
+<div class="card p-3">
+Analytical Thinking, Problem Solving, Quick Learner, Research Mindset
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="section container">
+<h4 class="text-center mb-4">Contact Me</h4>
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+<div class="card p-4">
+<form>
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" placeholder="Enter your email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea class="form-control" rows="4" placeholder="Enter your message"></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
+</div>
+</div>
+
+<div class="col-md-4 mt-4 mt-md-0">
+<div class="card p-4 text-center">
+<h5>Contact Info</h5>
 <p>Email: sudeepakongoti@gmail.com</p>
 <p>Phone: 9550862730</p>
-<p>GitHub: https://github.com/Sudeepa980</p>
-<p>LinkedIn: https://linkedin.com/in/sudeepa-kongoti-647b7333b</p>
-</section>
+<p>GitHub: github.com/Sudeepa980</p>
+<p>LinkedIn: linkedin.com/in/sudeepa-kongoti</p>
+</div>
+</div>
 
+</div>
 </div>
 
 </body>
 </html>
-
